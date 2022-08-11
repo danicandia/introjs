@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contenido{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.totales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h3{
+    text-align: center;
+    padding-top: 1em;
+}
+
+#cantidad{
+    margin-top:  1em;
+    margin-bottom: 1em;
+}
+
+#color{
+    margin-bottom: 1em;
+}
+
+.producto p{
+    padding-bottom: 2em;
+}
+
+.btn button{
+    margin-bottom: 2em;
+    background-color: rgb(55, 0, 255);
+    border-radius: 10%;
+    padding: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+#color-final{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+
+}

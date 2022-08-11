@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Desafío Intro JS</title>
+</head>
+
+<body>
+    <div class="contenido" >
+        <div class="card" width: 18rem;>
+            <div class="producto">
+                <img src="/assets/img/Desfibrilador-Zoll-AED-Plus-de-entrenamiento.jpg" alt="DEA" width="40%">
+                <h3>DEA</h3>
+                <P>Desfibrilador Externo Automático</P>
+        
+                <input type="text" id="cantidad">
+                <select id="color">
+                    <option value="yellow">Amarillo</option>
+                    <option value="red">Rojo</option>
+                    <option value="grey">Gris</option>
+                </select>
+                <p>Precio: <span id="precio">9900</span> </p>
+            </div>
+
+            <div class="btn">
+                <button onclick="
+                precio = document.querySelector('#precio').innerHTML;
+                console.log(precio);
+                cantidad = document.querySelector('#cantidad').value;
+                console.log(cantidad);
+                cantidad_total = document.querySelector('#cantidad-total');
+                cantidad_total.innerHTML = cantidad;
+
+                total = document.querySelector('#precio-total');
+                total.innerHTML = Number(precio) * Number(cantidad);
+                console.log(total)
+
+                color = document.querySelector('#color').value;
+                color_final = document.querySelector('#color-final');
+                color_final.style.backgroundColor = color;
+                
+            
+                ">Calcular Total</button>
+            </div>
+
+        </div>
+
+        <div class="totales">
+            <p>Total: $<span id="precio-total">0</span></p>
+            <p>Cantidad: <span id="cantidad-total">0</span></p>
+            <p>Color: <span id="color-final"></span></p>
+
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
